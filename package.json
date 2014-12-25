@@ -1,0 +1,11 @@
+{
+  "name": "dslink-javascript-beaglebone",
+  "version": "1.0.0",
+  "description": "DSLink for Beaglebone Black and various capes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Bullington <mikebullingtn@gmail.com>",
+  "license": "MIT"
+}
