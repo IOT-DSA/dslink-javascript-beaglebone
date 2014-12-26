@@ -7,5 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Michael Bullington <mikebullingtn@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bonescript": "0.2.4",
+    "dslink": "git://github.com/IOT-DSA/sdk-dslink-javascript.git#master"
+  }
 }
