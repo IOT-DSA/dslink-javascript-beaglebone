@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "bonescript": "0.2.4",
-    "dslink": "git://github.com/IOT-DSA/sdk-dslink-javascript.git#master"
+    "dslink": "IOT-DSA/sdk-dslink-javascript#artifacts",
+    "es6-promises": "^1.0.10"
   }
 }
