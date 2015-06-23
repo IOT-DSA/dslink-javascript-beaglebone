@@ -1,5 +1,5 @@
 var b = require('bonescript'),
-    Promise = Promise || require('es6-promises'),
+    Promise = typeof(Promise) !== 'undefined' ? Promise : require('es6-promises'),
     DS = require('dslink');
 
 var link;
