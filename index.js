@@ -15,7 +15,7 @@ function wrapFunction(name) {
           return params[param];
         }.bind(this)).filter(function(param) {
           return typeof(param) !== 'undefined' && param !== null;
-        }.push(function(x) {
+        }).push(function(x) {
           if(x.err) reject(x.err);
           resolve(x);
         }));
@@ -87,7 +87,7 @@ function addPin(name) {
         {
           name: 'options',
           type: 'array'
-        }
+        },
         {
           name: 'pullup',
           type: ENUM_PULLUP
@@ -172,7 +172,7 @@ b.getPlatform(function(platform) {
   link = new DS.LinkProvider(process.argv.slice(2), 'beaglebone-', {
     defaultNodes: {
       pins: {},
-      platform {
+      platform: {
         name: {
           $type: 'string',
           '?value': platform.name
@@ -198,22 +198,22 @@ b.getPlatform(function(platform) {
     profiles: {
       pinMode: function(path) {
         return new PinMode(path);
-      }
+      },
       getPinMode: function(path) {
         return new GetPinMode(path);
-      }
+      },
       digitalWrite: function(path) {
         return new DigitalWrite(path);
-      }
+      },
       digitalRead: function(path) {
         return new DigitalRead(path);
-      }
+      },
       shiftOut: function(path) {
         return new ShiftOut(path);
-      }
+      },
       analogWrite: function(path) {
         return new AnalogWrite(path);
-      }
+      },
       analogRead: function(path) {
         return new AnalogRead(path);
       },
