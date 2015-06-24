@@ -1,0 +1,16 @@
+{
+  "name": "dslink-javascript-beaglebone",
+  "version": "1.0.0",
+  "description": "DSLink for the BeagleBone Black.",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "getDependencies": [
+    "npm install"
+  ],
+  "configs": {
+    "broker": {
+      "type": "url"
+    }
+  }
+}
